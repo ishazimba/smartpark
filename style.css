@@ -1,0 +1,123 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: "Merriweather", serif;
+  font-family: "Open Sans", sans-serif;
+  margin: 2em;
+  background-color: #f8fff8;
+}
+
+h3 {
+  font-style: bold;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+h4 {
+  font-style: bold;
+  color: #6b201d;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-style: sans-serif;
+}
+h1 {
+  font-style: bold;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+p1 {
+  font-style: bold;
+  color: #6b201d;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "ph ph ph ph ph"
+    "ln cn cn cn cn"
+    "ln cn cn cn cn";
+}
+
+header {
+  grid-area: ph;
+  padding: 50px 80px;
+  background-image: url("https://cdn.glitch.global/7ebb9880-574c-400b-8bfa-76a64e42e370/cover.jpeg?v=1641649591479");
+  object-fit: cover;
+  background-position: center;
+  height: 320px;
+}
+.heading {
+  font-family: "Merriweather", serif;
+  font-size: 80px;
+  font-style: bold;
+  color: white;
+  padding: 10px 10px;
+}
+
+.about {
+  padding: 10px 10px;
+}
+.para {
+  font-family: sans-serif;
+  color: #6b201d;
+}
+
+nav {
+  grid-area: ln;
+  padding: 50px;
+  background-color: #f8fff8;
+  border: solid #6b201d;
+  text-align: center;
+  margin: 10px;
+  width: 550px;
+}
+
+main {
+  grid-area: cn;
+  background-color: #f8fff8;
+  border: solid #6b201d;
+
+  margin: 10px;
+}
+
+.search {
+  padding: 15px;
+  text-align: center;
+}
+
+.map {
+  width: 1000px;
+}
+
+.location {
+  text-align: center;
+}
+
+.table {
+  padding: 5px;
+}
+
+footer {
+  padding: 20px 30px;
+  background-color: green;
+  height: 250px;
+  width: 100%;
+}
+
+.pic {
+  padding: 70px 20px;
+}
+
+.footersp {
+  float: left;
+  padding: 20px 20px;
+}
+
+.footer_right {
+  width: 300px;
+  float: right;
+  padding: 30px 20px;
+}
