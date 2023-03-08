@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Smart Park</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Merriweather:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header>
+        <span class="heading" onclick="location.href='index.html'">
+          Smart Park
+        </span>
+
+        <div class="about">
+          <h3>
+            Find the nearest parking spot in Bristol and park your car smartly.
+          </h3>
+        </div>
+      </header>
+      <nav>
+        <div>
+          <p1>Select the parking area and reserve a spot for you.</p1>
+
+          <form class="search" action="search.html">
+            <input
+              name="searchterm"
+              placeholder="Enter the location..."
+              type="text"
+            />
+            <button type="submit" class="w3-green">
+              Find Parking<i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <div></div>
+      </nav>
+      <main>
+        <div class="w3-bar">
+          <button
+            class="w3-bar-item w3-button w3-ripple w3-blue"
+            onclick="show(this, 'tab','Free Parking Lots')"
+          >
+            Free Parking Lots
+          </button>
+          <button
+            class="w3-bar-item w3-button w3-ripple w3-green"
+            onclick="show(this, 'tab','Paid Parking Lots')"
+          >
+            Paid Parking Lots
+          </button>
+          <button
+            class="w3-bar-item w3-button w3-ripple w3-green"
+            onclick="show(this, 'tab','CCTV Monitored')"
+          >
+            CCTV Monitored
+          </button>
+        </div>
+        <div id="Free Parking Lots" class="tab">
+          <iframe
+            src="https://opendata.bristol.gov.uk/explore/embed/dataset/car-parks/table/?q=free&static=false&datasetcard=false"
+            width="840"
+            height="600"
+            frameborder="0"
+          ></iframe>
+        </div>
+        <div id="Paid Parking Lots" class="tab" style="display: none">
+          <iframe
+            src="https://opendata.bristol.gov.uk/explore/embed/dataset/car-parks/table/?q=pay&static=false&datasetcard=false"
+            width="840"
+            height="600"
+            frameborder="0"
+          ></iframe>
+        </div>
+        <div id="CCTV Monitored" class="tab" style="display: none">
+          <iframe
+            src="https://opendata.bristol.gov.uk/explore/embed/dataset/car-parks/table/?q=yes&static=false&datasetcard=false"
+            width="840"
+            height="600"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <div class="footersp">
+        <h1>Smart Park</h1>
+      </div>
+      <div class="footer_right">
+        <h3>Follow us:</h3>
+        <img
+          src="https://cdn.glitch.global/7ebb9880-574c-400b-8bfa-76a64e42e370/pngfind.com-fb-png-1672143.png?v=1641667028670"
+          width="30px"
+          height="30px"
+        />&nbsp &nbsp
+        <img
+          src="https://cdn.glitch.global/7ebb9880-574c-400b-8bfa-76a64e42e370/pngfind.com-instagram-symbol-png-381345.png?v=1641667038222"
+          width="30"
+          height="30"
+        />&nbsp &nbsp
+        <img
+          src="https://cdn.glitch.global/7ebb9880-574c-400b-8bfa-76a64e42e370/pngfind.com-twitter-bird-png-1209448.png?v=1641667045257"
+          width="30"
+          height="30"
+        />
+      </div>
+    </footer>
+  </body>
+</html>
